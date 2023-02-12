@@ -1,0 +1,5 @@
+.container {
+  height: 100vh;
+  background-color: blue;
+  border: solid 10px red;
+}
