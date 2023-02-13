@@ -1,14 +1,14 @@
 import { RandomArticle } from "@/modules/random-articles/application/random-article/random-article";
 
 interface Props {
-  articles: unknown[];
+  randomArticles: unknown[];
 }
 
-export const RandomArticlesListView = ({ articles }: Props) => {
+export const RandomArticlesListView = ({ randomArticles }: Props) => {
   return (
     <>
-      {articles.map((article, i) => (
-        <RandomArticle article={article} key={i} />
+      {randomArticles.map((randomArticles, i) => (
+        <RandomArticle randomArticles={randomArticles} key={i} />
       ))}
     </>
   );

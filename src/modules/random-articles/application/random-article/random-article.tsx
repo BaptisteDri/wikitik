@@ -3,16 +3,16 @@ import styles from "./random-article.module.css";
 import { useOnScreen } from "@/hooks/use-on-screen";
 
 interface Props {
-  article: unknown;
+  randomArticles: unknown;
 }
 
-export const RandomArticle = ({ article }: Props) => {
+export const RandomArticle = ({ randomArticles }: Props) => {
   const ref = useRef<HTMLDivElement>(null);
 
   const isVisible = useOnScreen(ref);
 
   useEffect(() => {
-    console.log(isVisible, article);
+    console.log(isVisible, randomArticles);
   }, [isVisible]);
 
   return (

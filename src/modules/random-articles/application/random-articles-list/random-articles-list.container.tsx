@@ -1,8 +1,8 @@
-import { useState } from "react";
+import { useAppSelector } from "@/config/store";
 import { RandomArticlesListView } from "./random-articles-list.view";
 
 export const RandomArticlesListContainer = () => {
-  const [articles, setArticles] = useState<unknown[]>([1, 2]);
+  const randomArticles: unknown[] = useAppSelector(selectRandomArticles);
 
-  return <RandomArticlesListView articles={articles} />;
+  return <RandomArticlesListView randomArticles={randomArticles} />;
 };
