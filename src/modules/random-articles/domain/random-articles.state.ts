@@ -8,7 +8,7 @@ export interface RandomArticlesState {
 }
 
 export const initialState: RandomArticlesState = {
-  randomArticles: null,
+  randomArticles: [null, null, null],
   getRandomArticlesError: null,
   getRandomArticlesStatus: RequestStatus.IDLE,
 };
