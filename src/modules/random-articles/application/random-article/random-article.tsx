@@ -27,7 +27,7 @@ export const RandomArticle = ({ randomArticle, addRandomArticle }: Props) => {
         <h2 className={styles.title}>{randomArticle.title}</h2>
         <div className={styles.description}>{randomArticle.description}</div>
         <div className={styles.content}>{randomArticle.content}</div>
-        <a href={randomArticle.url} target="_blank">
+        <a href={randomArticle.url} target="_blank" rel="noreferrer">
           voir sur wiki
         </a>
       </div>
