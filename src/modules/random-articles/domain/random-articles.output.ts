@@ -1,8 +1,5 @@
-import { CustomError } from "@/types/error";
+import { RandomArticle } from "./random-articles";
 
 export interface RandomArticlesOutput {
-  getRandomArticles(): Promise<{
-    randomArticles: unknown[] | null;
-    error: CustomError | null;
-  }>;
+  getRandomArticle(): Promise<RandomArticle>;
 }

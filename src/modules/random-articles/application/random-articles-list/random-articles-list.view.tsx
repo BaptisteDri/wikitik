@@ -1,17 +1,30 @@
 import { RandomArticle } from "@/modules/random-articles/application/random-article/random-article";
+import { RandomArticle as RandomArticleType } from "../../domain/random-articles";
 
 interface Props {
-  randomArticles: unknown[] | null;
+  randomArticles: RandomArticleType[];
+  addRandomArticle: () => void;
 }
 
-export const RandomArticlesListView = ({ randomArticles }: Props) => {
+export const RandomArticlesListView = ({
+  randomArticles,
+  addRandomArticle,
+}: Props) => {
   console.log(randomArticles);
 
   return (
     <>
-      {randomArticles!.map((randomArticles, i) => (
-        <RandomArticle randomArticles={randomArticles} key={i} />
-      ))}
+      {randomArticles ? (
+        randomArticles.map((randomArticle, i) => (
+          <RandomArticle
+            randomArticle={randomArticle}
+            addRandomArticle={addRandomArticle}
+            key={i}
+          />
+        ))
+      ) : (
+        <></>
+      )}
     </>
   );
 };

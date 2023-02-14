@@ -1,5 +1,29 @@
 .container {
   height: 100vh;
-  background-color: blue;
-  border: solid 10px red;
+  border: solid 1px lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.title {
+  font-size: 2rem;
+}
+
+.description {
+  color: #00000080;
+}
+
+.img {
+  max-width: 50%;
+  max-height: 50%;
+}
+
+.content {
+  line-height: 2rem;
+  max-width: 80%;
+  text-align: center;
 }
