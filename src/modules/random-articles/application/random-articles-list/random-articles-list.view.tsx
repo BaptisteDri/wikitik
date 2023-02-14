@@ -1,5 +1,6 @@
 import { RandomArticle } from "@/modules/random-articles/application/random-article/random-article";
 import { RandomArticle as RandomArticleType } from "../../domain/random-articles";
+import styles from "./random-articles-list.module.css";
 
 interface Props {
   randomArticles: RandomArticleType[];
@@ -11,7 +12,7 @@ export const RandomArticlesListView = ({
   addRandomArticle,
 }: Props) => {
   return (
-    <>
+    <div className={styles.container}>
       {randomArticles ? (
         randomArticles.map((randomArticle, i) => (
           <RandomArticle
@@ -23,6 +24,6 @@ export const RandomArticlesListView = ({
       ) : (
         <></>
       )}
-    </>
+    </div>
   );
 };

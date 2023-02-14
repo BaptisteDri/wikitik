@@ -1,12 +1,21 @@
 .container {
+  width: 100%;
   height: 100vh;
-  border: solid 1px lightgray;
+  background-size: cover;
+  scroll-snap-align: start;
+  overflow: hidden;
+}
+
+.wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
+  /* border: solid 1px blue; */
   flex-direction: column;
   gap: 2rem;
-  padding: 2rem;
+  height: inherit;
+  width: inherit;
+  overflow: hidden;
 }
 
 .title {
@@ -19,11 +28,15 @@
 
 .img {
   max-width: 50%;
-  max-height: 50%;
+  max-height: 30%;
 }
 
 .content {
   line-height: 2rem;
-  max-width: 80%;
+  padding: 0 2rem;
+  max-width: 800px;
   text-align: center;
+  /* white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; */
 }
