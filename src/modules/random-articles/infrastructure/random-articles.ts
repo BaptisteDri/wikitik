@@ -6,7 +6,9 @@ export interface RandomArticle {
   description: string;
   extract: string;
   content_urls: {
-    desktop: string;
+    desktop: {
+      page: string;
+    };
     mobile: string;
   };
 }

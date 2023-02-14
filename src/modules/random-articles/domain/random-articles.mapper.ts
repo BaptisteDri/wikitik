@@ -9,7 +9,7 @@ export const mapToDomainModel = (
 
   return {
     title,
-    url: content_urls.desktop,
+    url: content_urls.desktop.page,
     image: originalimage.source,
     content: extract,
     description,

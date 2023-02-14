@@ -10,8 +10,6 @@ export const RandomArticlesListView = ({
   randomArticles,
   addRandomArticle,
 }: Props) => {
-  console.log(randomArticles);
-
   return (
     <>
       {randomArticles ? (
