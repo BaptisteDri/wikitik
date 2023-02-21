@@ -26,7 +26,7 @@
 
 .title {
   font-size: 1.7rem;
-  margin-bottom: 4px;
+  margin-bottom: 8px;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
@@ -35,19 +35,22 @@
   font-weight: bold;
   width: 100%;
   line-height: 2rem;
+  color: #fffffe;
 }
 
 .description {
-  color: #00000080;
   width: 100%;
+  line-height: 1.2rem;
   margin-bottom: 12px;
-  line-height: 1.5rem;
+  font-size: 0.9rem;
   display: -webkit-box;
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   overflow: hidden;
   font-family: Poppins;
-  text-transform: capitalize;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  color: #fffffe;
 }
 
 .thumbnail {
@@ -63,6 +66,7 @@
   overflow: hidden;
   background-size: cover;
   background-position: center;
+  box-shadow: 0px 0px 50px #a7a9be60;
 }
 
 .content {
@@ -74,4 +78,5 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
   font-family: Poppins;
+  color: #a7a9be;
 }
