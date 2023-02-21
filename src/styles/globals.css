@@ -1,5 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;700&family=Poppins&display=swap");
+
 :root {
   font-family: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
     "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
     "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
+}
+
+html,
+body,
+#__next,
+main {
+  height: 100%;
 }
