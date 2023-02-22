@@ -24,6 +24,28 @@
   color: initial;
 }
 
+@media (prefers-color-scheme: light) {
+  .title,
+  .description {
+    color: #0f0e17;
+  }
+
+  .content {
+    color: #2e2f3e;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .title,
+  .description {
+    color: #fffffe;
+  }
+
+  .content {
+    color: #a7a9be;
+  }
+}
+
 .title {
   font-size: 1.7rem;
   margin-bottom: 8px;
@@ -35,7 +57,6 @@
   font-weight: bold;
   width: 100%;
   line-height: 2rem;
-  color: #fffffe;
 }
 
 .description {
@@ -48,9 +69,8 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
   font-family: Poppins;
-  text-transform: uppercase;
+  text-transform: capitalize;
   letter-spacing: 0.2rem;
-  color: #fffffe;
 }
 
 .thumbnail {
@@ -77,5 +97,4 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
   font-family: Poppins;
-  color: #a7a9be;
 }
