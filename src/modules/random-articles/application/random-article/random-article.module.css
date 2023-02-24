@@ -73,21 +73,6 @@
   letter-spacing: 0.2rem;
 }
 
-.thumbnail {
-  height: 60%;
-  width: calc(100% - 8px);
-  border-radius: 12px;
-  margin-bottom: 24px;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  background-size: cover;
-  background-position: center;
-  box-shadow: 0px 0px 50px #a7a9be40;
-}
-
 .content {
   line-height: 1.7rem;
   max-width: 1000px;

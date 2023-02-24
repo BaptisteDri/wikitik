@@ -1,0 +1,13 @@
+.thumbnail {
+  height: 60%;
+  width: calc(100% - 8px);
+  border-radius: 12px;
+  margin-bottom: 24px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}

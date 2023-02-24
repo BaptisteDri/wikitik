@@ -2,6 +2,7 @@ import { useEffect, useRef } from "react";
 import styles from "./random-article.module.css";
 import { useOnScreen } from "@/hooks/use-on-screen";
 import { RandomArticle as RandomArticleType } from "../../domain/random-articles";
+import { RandomArticleImageContainer } from "../random-article-image/random-article-image.container";
 
 interface Props {
   randomArticle: RandomArticleType;
@@ -24,10 +25,7 @@ export const RandomArticle = ({ randomArticle, addRandomArticle }: Props) => {
         target="_blank"
         rel="noreferrer"
       >
-        <div
-          className={styles.thumbnail}
-          style={{ backgroundImage: `url(${randomArticle.image})` }}
-        />
+        <RandomArticleImageContainer imageUrl={randomArticle.image} />
         <h2 className={styles.title}>{randomArticle.title}</h2>
         <div className={styles.description}>{randomArticle.description}</div>
         <div className={styles.content}>{randomArticle.content}</div>
