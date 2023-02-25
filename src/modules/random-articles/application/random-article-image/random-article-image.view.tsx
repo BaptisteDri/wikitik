@@ -13,7 +13,7 @@ export const RandomArticleImageView = ({
     className={styles.thumbnail}
     style={{
       backgroundImage: `url(${imageUrl})`,
-      boxShadow: `0px 0px 50px ${imageBackgroundColor}30`,
+      boxShadow: `0px 0px 40px ${imageBackgroundColor}55`,
     }}
   />
 );
