@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import styles from "./random-article.module.css";
 import { useOnScreen } from "@/hooks/use-on-screen";
 import { RandomArticle as RandomArticleType } from "../../domain/random-articles";
-import { RandomArticleImageContainer } from "../random-article-image/random-article-image.container";
+import { RandomArticleImage } from "../random-article-image/random-article-image";
 
 interface Props {
   randomArticle: RandomArticleType;
@@ -19,7 +19,10 @@ export const RandomArticle = ({ randomArticle, addRandomArticle }: Props) => {
 
   return (
     <article ref={ref} className={styles.container}>
-      <RandomArticleImageContainer imageUrl={randomArticle.image} />
+      <RandomArticleImage
+        imageUrl={randomArticle.image}
+        altText={randomArticle.title}
+      />
       <aside className={styles.aside}>
         <h2 className={styles.title}>{randomArticle.title}</h2>
         <div className={styles.description}>{randomArticle.description}</div>
