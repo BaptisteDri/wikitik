@@ -1,8 +1,7 @@
 .thumbnail {
-  height: 60%;
-  width: calc(100% - 8px);
+  height: calc(100% - 4rem);
+  flex: 1;
   border-radius: 12px;
-  margin-bottom: 24px;
   overflow: hidden;
   display: flex;
   justify-content: center;

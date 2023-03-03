@@ -19,16 +19,19 @@ export const RandomArticle = ({ randomArticle, addRandomArticle }: Props) => {
 
   return (
     <article ref={ref} className={styles.container}>
+      <RandomArticleImageContainer imageUrl={randomArticle.image} />
+      <aside className={styles.aside}>
+        <h2 className={styles.title}>{randomArticle.title}</h2>
+        <div className={styles.description}>{randomArticle.description}</div>
+        <div className={styles.content}>{randomArticle.content}</div>
+      </aside>
       <a
-        className={styles.wrapper}
+        className={styles.link}
         href={randomArticle.url}
         target="_blank"
         rel="noreferrer"
       >
-        <RandomArticleImageContainer imageUrl={randomArticle.image} />
-        <h2 className={styles.title}>{randomArticle.title}</h2>
-        <div className={styles.description}>{randomArticle.description}</div>
-        <div className={styles.content}>{randomArticle.content}</div>
+        <img src={"/wikipedia_logo.svg"} alt="Wikipedia Logo" />
       </a>
     </article>
   );
