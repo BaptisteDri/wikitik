@@ -6,7 +6,6 @@ import { appOutputs } from "@/config/app-outputs";
 
 export const RandomArticlesListContainer = () => {
   const [randomArticles, setRandomArticles] = useState<RandomArticle[]>([]);
-
   const { randomArticlesOutput } = appOutputs;
 
   const addRandomArticle = async () => {

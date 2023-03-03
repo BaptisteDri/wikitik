@@ -18,7 +18,11 @@ export const RandomArticle = ({ randomArticle, addRandomArticle }: Props) => {
   }, [isVisible]);
 
   return (
-    <article ref={ref} className={styles.container}>
+    <article
+      ref={ref}
+      className={styles.container}
+      style={{ backgroundImage: `url(${randomArticle.image})` }}
+    >
       <RandomArticleImage
         imageUrl={randomArticle.image}
         altText={randomArticle.title}
