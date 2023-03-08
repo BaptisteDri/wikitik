@@ -1,23 +1,10 @@
-@media (prefers-color-scheme: light) {
-  .title,
-  .description {
-    color: #0f0e17;
-  }
-
-  .content {
-    color: #2e2f3e;
-  }
+.title,
+.description {
+  color: #0f0e17;
 }
 
-@media (prefers-color-scheme: dark) {
-  .title,
-  .description {
-    color: #fffffe;
-  }
-
-  .content {
-    color: #a7a9be;
-  }
+.content {
+  color: #2e2f3e;
 }
 
 .container {
